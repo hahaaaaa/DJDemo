@@ -1,0 +1,6 @@
+platform:ios, '9.0'
+
+target 'DJDemo' do
+pod 'AFNetworking'
+pod 'Masonry'
+end
