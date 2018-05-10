@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		688FBD682087395C00EF1924 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 688FBD672087395C00EF1924 /* AppDelegate.m */; };
 		688FBD6B2087395C00EF1924 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 688FBD6A2087395C00EF1924 /* ViewController.m */; };
-		688FBD6E2087395C00EF1924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 688FBD6C2087395C00EF1924 /* Main.storyboard */; };
 		688FBD702087395C00EF1924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 688FBD6F2087395C00EF1924 /* Assets.xcassets */; };
 		688FBD732087395C00EF1924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 688FBD712087395C00EF1924 /* LaunchScreen.storyboard */; };
 		688FBD762087395C00EF1924 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 688FBD752087395C00EF1924 /* main.m */; };
 		688FBD802087395C00EF1924 /* DJDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 688FBD7F2087395C00EF1924 /* DJDemoTests.m */; };
 		688FBD8B2087395C00EF1924 /* DJDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 688FBD8A2087395C00EF1924 /* DJDemoUITests.m */; };
+		68D6731B20A2847A00F24CBA /* DJBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D6731A20A2847A00F24CBA /* DJBaseNavigationController.m */; };
+		68D6731E20A2849200F24CBA /* DJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D6731D20A2849200F24CBA /* DJBaseViewController.m */; };
 		8E04A6790C83EED278776517 /* libPods-DJDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 540D95C51904798773DBC8AD /* libPods-DJDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +43,6 @@
 		688FBD672087395C00EF1924 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		688FBD692087395C00EF1924 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		688FBD6A2087395C00EF1924 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		688FBD6D2087395C00EF1924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		688FBD6F2087395C00EF1924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		688FBD722087395C00EF1924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		688FBD742087395C00EF1924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +53,10 @@
 		688FBD862087395C00EF1924 /* DJDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DJDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		688FBD8A2087395C00EF1924 /* DJDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJDemoUITests.m; sourceTree = "<group>"; };
 		688FBD8C2087395C00EF1924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68D6731920A2847A00F24CBA /* DJBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJBaseNavigationController.h; sourceTree = "<group>"; };
+		68D6731A20A2847A00F24CBA /* DJBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJBaseNavigationController.m; sourceTree = "<group>"; };
+		68D6731C20A2849200F24CBA /* DJBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJBaseViewController.h; sourceTree = "<group>"; };
+		68D6731D20A2849200F24CBA /* DJBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJBaseViewController.m; sourceTree = "<group>"; };
 		B76FE1278D7253EFC0941C78 /* Pods-DJDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DJDemo/Pods-DJDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DACBDEE49C85287B17410F25 /* Pods-DJDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DJDemo/Pods-DJDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,11 +120,16 @@
 		688FBD652087395C00EF1924 /* DJDemo */ = {
 			isa = PBXGroup;
 			children = (
+				68D6731120A19E7D00F24CBA /* Main */,
+				68D6731220A19EA400F24CBA /* Tools */,
+				68D6731020A19E7300F24CBA /* BaseClass */,
+				68D6731420A19F1A00F24CBA /* Libs */,
+				68D6731320A19F0600F24CBA /* Resource */,
+				68D6731520A19F4C00F24CBA /* Constants */,
 				688FBD662087395C00EF1924 /* AppDelegate.h */,
 				688FBD672087395C00EF1924 /* AppDelegate.m */,
 				688FBD692087395C00EF1924 /* ViewController.h */,
 				688FBD6A2087395C00EF1924 /* ViewController.m */,
-				688FBD6C2087395C00EF1924 /* Main.storyboard */,
 				688FBD6F2087395C00EF1924 /* Assets.xcassets */,
 				688FBD712087395C00EF1924 /* LaunchScreen.storyboard */,
 				688FBD742087395C00EF1924 /* Info.plist */,
@@ -145,6 +154,52 @@
 				688FBD8C2087395C00EF1924 /* Info.plist */,
 			);
 			path = DJDemoUITests;
+			sourceTree = "<group>";
+		};
+		68D6731020A19E7300F24CBA /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				68D6731920A2847A00F24CBA /* DJBaseNavigationController.h */,
+				68D6731A20A2847A00F24CBA /* DJBaseNavigationController.m */,
+				68D6731C20A2849200F24CBA /* DJBaseViewController.h */,
+				68D6731D20A2849200F24CBA /* DJBaseViewController.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		68D6731120A19E7D00F24CBA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		68D6731220A19EA400F24CBA /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		68D6731320A19F0600F24CBA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		68D6731420A19F1A00F24CBA /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		68D6731520A19F4C00F24CBA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		E56E4C16A00C70BA5B8B9A03 /* Pods */ = {
@@ -265,7 +320,6 @@
 			files = (
 				688FBD732087395C00EF1924 /* LaunchScreen.storyboard in Resources */,
 				688FBD702087395C00EF1924 /* Assets.xcassets in Resources */,
-				688FBD6E2087395C00EF1924 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,9 +365,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68D6731B20A2847A00F24CBA /* DJBaseNavigationController.m in Sources */,
 				688FBD6B2087395C00EF1924 /* ViewController.m in Sources */,
 				688FBD762087395C00EF1924 /* main.m in Sources */,
 				688FBD682087395C00EF1924 /* AppDelegate.m in Sources */,
+				68D6731E20A2849200F24CBA /* DJBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,14 +405,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		688FBD6C2087395C00EF1924 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				688FBD6D2087395C00EF1924 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		688FBD712087395C00EF1924 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

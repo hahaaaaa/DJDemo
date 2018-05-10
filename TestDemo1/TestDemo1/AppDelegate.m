@@ -1,13 +1,14 @@
 //
 //  AppDelegate.m
-//  DJDemo
+//  TestDemo1
 //
-//  Created by Sky on 2018/4/18.
+//  Created by Sky on 2018/4/27.
 //  Copyright © 2018年 Sky. All rights reserved.
 //
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,6 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
     [self.window makeKeyAndVisible];
