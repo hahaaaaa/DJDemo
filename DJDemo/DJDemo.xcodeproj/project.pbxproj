@@ -14,6 +14,8 @@
 		688FBD762087395C00EF1924 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 688FBD752087395C00EF1924 /* main.m */; };
 		688FBD802087395C00EF1924 /* DJDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 688FBD7F2087395C00EF1924 /* DJDemoTests.m */; };
 		688FBD8B2087395C00EF1924 /* DJDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 688FBD8A2087395C00EF1924 /* DJDemoUITests.m */; };
+		68BD868F20BE771E0079B677 /* NSNull+NULLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BD868B20BE771E0079B677 /* NSNull+NULLExtension.m */; };
+		68BD869020BE771E0079B677 /* UIViewController+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BD868D20BE771E0079B677 /* UIViewController+Animation.m */; };
 		68D6731B20A2847A00F24CBA /* DJBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D6731A20A2847A00F24CBA /* DJBaseNavigationController.m */; };
 		68D6731E20A2849200F24CBA /* DJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D6731D20A2849200F24CBA /* DJBaseViewController.m */; };
 		8E04A6790C83EED278776517 /* libPods-DJDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 540D95C51904798773DBC8AD /* libPods-DJDemo.a */; };
@@ -53,6 +55,10 @@
 		688FBD862087395C00EF1924 /* DJDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DJDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		688FBD8A2087395C00EF1924 /* DJDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJDemoUITests.m; sourceTree = "<group>"; };
 		688FBD8C2087395C00EF1924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68BD868B20BE771E0079B677 /* NSNull+NULLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+NULLExtension.m"; sourceTree = "<group>"; };
+		68BD868C20BE771E0079B677 /* UIViewController+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Animation.h"; sourceTree = "<group>"; };
+		68BD868D20BE771E0079B677 /* UIViewController+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Animation.m"; sourceTree = "<group>"; };
+		68BD868E20BE771E0079B677 /* NSNull+NULLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+NULLExtension.h"; sourceTree = "<group>"; };
 		68D6731920A2847A00F24CBA /* DJBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJBaseNavigationController.h; sourceTree = "<group>"; };
 		68D6731A20A2847A00F24CBA /* DJBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJBaseNavigationController.m; sourceTree = "<group>"; };
 		68D6731C20A2849200F24CBA /* DJBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJBaseViewController.h; sourceTree = "<group>"; };
@@ -120,6 +126,7 @@
 		688FBD652087395C00EF1924 /* DJDemo */ = {
 			isa = PBXGroup;
 			children = (
+				68BD868A20BE770C0079B677 /* Category */,
 				68D6731120A19E7D00F24CBA /* Main */,
 				68D6731220A19EA400F24CBA /* Tools */,
 				68D6731020A19E7300F24CBA /* BaseClass */,
@@ -154,6 +161,17 @@
 				688FBD8C2087395C00EF1924 /* Info.plist */,
 			);
 			path = DJDemoUITests;
+			sourceTree = "<group>";
+		};
+		68BD868A20BE770C0079B677 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				68BD868E20BE771E0079B677 /* NSNull+NULLExtension.h */,
+				68BD868B20BE771E0079B677 /* NSNull+NULLExtension.m */,
+				68BD868C20BE771E0079B677 /* UIViewController+Animation.h */,
+				68BD868D20BE771E0079B677 /* UIViewController+Animation.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		68D6731020A19E7300F24CBA /* BaseClass */ = {
@@ -367,7 +385,9 @@
 			files = (
 				68D6731B20A2847A00F24CBA /* DJBaseNavigationController.m in Sources */,
 				688FBD6B2087395C00EF1924 /* ViewController.m in Sources */,
+				68BD868F20BE771E0079B677 /* NSNull+NULLExtension.m in Sources */,
 				688FBD762087395C00EF1924 /* main.m in Sources */,
+				68BD869020BE771E0079B677 /* UIViewController+Animation.m in Sources */,
 				688FBD682087395C00EF1924 /* AppDelegate.m in Sources */,
 				68D6731E20A2849200F24CBA /* DJBaseViewController.m in Sources */,
 			);
