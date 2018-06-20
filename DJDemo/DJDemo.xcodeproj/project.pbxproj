@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6809EE8E20DA307600045E3A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6809EE8D20DA307600045E3A /* libsqlite3.tbd */; };
+		6809EE9120DA317400045E3A /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 6809EE9020DA317300045E3A /* Student.m */; };
+		6809EE9720DA372300045E3A /* DJHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 6809EE9420DA372300045E3A /* DJHud.m */; };
+		6809EE9820DA372300045E3A /* DJAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6809EE9620DA372300045E3A /* DJAlertView.m */; };
+		687B832F20C93E5C006F11BC /* DJObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 687B832E20C93E5C006F11BC /* DJObject.m */; };
 		688FBD682087395C00EF1924 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 688FBD672087395C00EF1924 /* AppDelegate.m */; };
 		688FBD6B2087395C00EF1924 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 688FBD6A2087395C00EF1924 /* ViewController.m */; };
 		688FBD702087395C00EF1924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 688FBD6F2087395C00EF1924 /* Assets.xcassets */; };
@@ -14,6 +19,8 @@
 		688FBD762087395C00EF1924 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 688FBD752087395C00EF1924 /* main.m */; };
 		688FBD802087395C00EF1924 /* DJDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 688FBD7F2087395C00EF1924 /* DJDemoTests.m */; };
 		688FBD8B2087395C00EF1924 /* DJDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 688FBD8A2087395C00EF1924 /* DJDemoUITests.m */; };
+		68B231F020CE70F400031C9C /* CollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B231EE20CE70F400031C9C /* CollectionReusableView.m */; };
+		68B231F120CE70F400031C9C /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B231EF20CE70F400031C9C /* CollectionReusableView.xib */; };
 		68BD868F20BE771E0079B677 /* NSNull+NULLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BD868B20BE771E0079B677 /* NSNull+NULLExtension.m */; };
 		68BD869020BE771E0079B677 /* UIViewController+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BD868D20BE771E0079B677 /* UIViewController+Animation.m */; };
 		68D6731B20A2847A00F24CBA /* DJBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D6731A20A2847A00F24CBA /* DJBaseNavigationController.m */; };
@@ -40,6 +47,16 @@
 
 /* Begin PBXFileReference section */
 		540D95C51904798773DBC8AD /* libPods-DJDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DJDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6809EE8D20DA307600045E3A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		6809EE8F20DA317300045E3A /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		6809EE9020DA317300045E3A /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		6809EE9220DA325A00045E3A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6809EE9320DA372300045E3A /* DJAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJAlertView.h; sourceTree = "<group>"; };
+		6809EE9420DA372300045E3A /* DJHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJHud.m; sourceTree = "<group>"; };
+		6809EE9520DA372300045E3A /* DJHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJHud.h; sourceTree = "<group>"; };
+		6809EE9620DA372300045E3A /* DJAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJAlertView.m; sourceTree = "<group>"; };
+		687B832D20C93E5C006F11BC /* DJObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJObject.h; sourceTree = "<group>"; };
+		687B832E20C93E5C006F11BC /* DJObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJObject.m; sourceTree = "<group>"; };
 		688FBD632087395C00EF1924 /* DJDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DJDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		688FBD662087395C00EF1924 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		688FBD672087395C00EF1924 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -55,6 +72,9 @@
 		688FBD862087395C00EF1924 /* DJDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DJDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		688FBD8A2087395C00EF1924 /* DJDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJDemoUITests.m; sourceTree = "<group>"; };
 		688FBD8C2087395C00EF1924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68B231ED20CE70F400031C9C /* CollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionReusableView.h; sourceTree = "<group>"; };
+		68B231EE20CE70F400031C9C /* CollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionReusableView.m; sourceTree = "<group>"; };
+		68B231EF20CE70F400031C9C /* CollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
 		68BD868B20BE771E0079B677 /* NSNull+NULLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+NULLExtension.m"; sourceTree = "<group>"; };
 		68BD868C20BE771E0079B677 /* UIViewController+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Animation.h"; sourceTree = "<group>"; };
 		68BD868D20BE771E0079B677 /* UIViewController+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Animation.m"; sourceTree = "<group>"; };
@@ -72,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6809EE8E20DA307600045E3A /* libsqlite3.tbd in Frameworks */,
 				8E04A6790C83EED278776517 /* libPods-DJDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,9 +117,21 @@
 		33CA4591FB3946B3B4DDCAD0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6809EE8D20DA307600045E3A /* libsqlite3.tbd */,
 				540D95C51904798773DBC8AD /* libPods-DJDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		687B832C20C93E4B006F11BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				687B832D20C93E5C006F11BC /* DJObject.h */,
+				687B832E20C93E5C006F11BC /* DJObject.m */,
+				6809EE8F20DA317300045E3A /* Student.h */,
+				6809EE9020DA317300045E3A /* Student.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		688FBD5A2087395C00EF1924 = {
@@ -126,8 +159,8 @@
 		688FBD652087395C00EF1924 /* DJDemo */ = {
 			isa = PBXGroup;
 			children = (
-				68BD868A20BE770C0079B677 /* Category */,
 				68D6731120A19E7D00F24CBA /* Main */,
+				68BD868A20BE770C0079B677 /* Category */,
 				68D6731220A19EA400F24CBA /* Tools */,
 				68D6731020A19E7300F24CBA /* BaseClass */,
 				68D6731420A19F1A00F24CBA /* Libs */,
@@ -137,10 +170,14 @@
 				688FBD672087395C00EF1924 /* AppDelegate.m */,
 				688FBD692087395C00EF1924 /* ViewController.h */,
 				688FBD6A2087395C00EF1924 /* ViewController.m */,
+				68B231ED20CE70F400031C9C /* CollectionReusableView.h */,
+				68B231EE20CE70F400031C9C /* CollectionReusableView.m */,
+				68B231EF20CE70F400031C9C /* CollectionReusableView.xib */,
 				688FBD6F2087395C00EF1924 /* Assets.xcassets */,
 				688FBD712087395C00EF1924 /* LaunchScreen.storyboard */,
 				688FBD742087395C00EF1924 /* Info.plist */,
 				688FBD752087395C00EF1924 /* main.m */,
+				6809EE9220DA325A00045E3A /* PrefixHeader.pch */,
 			);
 			path = DJDemo;
 			sourceTree = "<group>";
@@ -188,6 +225,7 @@
 		68D6731120A19E7D00F24CBA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				687B832C20C93E4B006F11BC /* Models */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -195,6 +233,10 @@
 		68D6731220A19EA400F24CBA /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				6809EE9320DA372300045E3A /* DJAlertView.h */,
+				6809EE9620DA372300045E3A /* DJAlertView.m */,
+				6809EE9520DA372300045E3A /* DJHud.h */,
+				6809EE9420DA372300045E3A /* DJHud.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -337,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				688FBD732087395C00EF1924 /* LaunchScreen.storyboard in Resources */,
+				68B231F120CE70F400031C9C /* CollectionReusableView.xib in Resources */,
 				688FBD702087395C00EF1924 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,9 +428,14 @@
 			files = (
 				68D6731B20A2847A00F24CBA /* DJBaseNavigationController.m in Sources */,
 				688FBD6B2087395C00EF1924 /* ViewController.m in Sources */,
+				68B231F020CE70F400031C9C /* CollectionReusableView.m in Sources */,
+				687B832F20C93E5C006F11BC /* DJObject.m in Sources */,
 				68BD868F20BE771E0079B677 /* NSNull+NULLExtension.m in Sources */,
+				6809EE9820DA372300045E3A /* DJAlertView.m in Sources */,
+				6809EE9720DA372300045E3A /* DJHud.m in Sources */,
 				688FBD762087395C00EF1924 /* main.m in Sources */,
 				68BD869020BE771E0079B677 /* UIViewController+Animation.m in Sources */,
+				6809EE9120DA317400045E3A /* Student.m in Sources */,
 				688FBD682087395C00EF1924 /* AppDelegate.m in Sources */,
 				68D6731E20A2849200F24CBA /* DJBaseViewController.m in Sources */,
 			);
@@ -547,6 +595,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSMHUHZH8P;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DJDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = DJDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.djj.DJDemo;
@@ -562,6 +611,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSMHUHZH8P;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DJDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = DJDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.djj.DJDemo;
