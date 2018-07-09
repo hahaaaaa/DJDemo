@@ -4,4 +4,5 @@ target 'DJDemo' do
 pod 'AFNetworking'
 pod 'Masonry'
 pod 'FMDB'
+pod 'lottie-ios'
 end

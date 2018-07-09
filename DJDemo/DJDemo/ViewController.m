@@ -68,7 +68,7 @@
     layout.minimumLineSpacing = cell_margin;
     layout.minimumInteritemSpacing = cell_space;
     layout.estimatedItemSize = CGSizeMake(30, 20);
-    layout.headerReferenceSize = CGSizeMake(375, 100);
+    layout.headerReferenceSize = CGSizeMake(375, 120);
 
     layout.sectionInset = UIEdgeInsetsMake(cell_margin, cell_margin, cell_margin, cell_margin);
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
@@ -82,12 +82,6 @@
     [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([CollectionReusableView class]) bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([CollectionReusableView class])];
     _collectionView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
     
-    UITableView *tab = nil;
-    [tab performBatchUpdates:^{
-        
-    } completion:^(BOOL finished) {
-        
-    }];
     _collectionView.showsVerticalScrollIndicator = YES;
     
     [self.view addSubview:_collectionView];
@@ -115,6 +109,8 @@
     UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
     UILabel *label = (UILabel *)[cell.contentView viewWithTag:indexPath.row + 100];
     if ([label.text containsString:@"创建"]) {
+        [XHLoadingView showLoading];
+        return;
         //3.创建表
         BOOL result = [_db executeUpdate:@"CREATE TABLE IF NOT EXISTS t_student (id integer PRIMARY KEY AUTOINCREMENT, name text NOT NULL, age integer NOT NULL, sex text NOT NULL);"];
         if (result) {
@@ -123,7 +119,9 @@
             [DJHud showMessage:@"创建表失败"];
         }
     } else if ([label.text containsString:@"添加"]) {
-        
+        [XHLoadingView endLoading];
+        return;
+
         //插入数据
         NSString *name = [NSString stringWithFormat:@"王子涵%@",@(mark_student)];
         int age = mark_student;
@@ -198,7 +196,7 @@
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
         CollectionReusableView *view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([CollectionReusableView class]) forIndexPath:indexPath];
-        view.label.text = @"矮纸斜行闲作草，晴窗细乳戏分茶\n素衣莫起风尘叹，犹及清明可到家";
+        view.label.text = @"世味年来薄似纱，谁曾骑马客京华\n小楼一夜听春雨，深巷明朝卖杏花\n矮纸斜行闲作草，晴窗细乳戏分茶\n素衣莫起风尘叹，犹及清明可到家";
         view.label.font = [UIFont fontWithName:@"迷你简柏青" size:17];
         return view;
     } else {

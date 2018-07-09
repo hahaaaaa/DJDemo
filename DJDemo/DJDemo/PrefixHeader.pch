@@ -14,6 +14,7 @@
 #import <Masonry.h>
 #import "DJHud.h"
 #import "DJAlertView.h"
+#import "XHLoadingView.h"
 
 //Model
 #import "Student.h"

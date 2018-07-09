@@ -12,6 +12,11 @@
 		6809EE9720DA372300045E3A /* DJHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 6809EE9420DA372300045E3A /* DJHud.m */; };
 		6809EE9820DA372300045E3A /* DJAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6809EE9620DA372300045E3A /* DJAlertView.m */; };
 		687B832F20C93E5C006F11BC /* DJObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 687B832E20C93E5C006F11BC /* DJObject.m */; };
+		687C87B620E33A8900E9415C /* XHLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 687C87B420E33A8800E9415C /* XHLoadingView.m */; };
+		687C87B820E33AD200E9415C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687C87B720E33AD200E9415C /* MobileCoreServices.framework */; };
+		687C87BA20E33ADC00E9415C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687C87B920E33ADC00E9415C /* ImageIO.framework */; };
+		687C87BD20E33E2300E9415C /* run.gif in Resources */ = {isa = PBXBuildFile; fileRef = 687C87BB20E33E2200E9415C /* run.gif */; };
+		687C87BE20E33E2300E9415C /* ride.gif in Resources */ = {isa = PBXBuildFile; fileRef = 687C87BC20E33E2300E9415C /* ride.gif */; };
 		688FBD682087395C00EF1924 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 688FBD672087395C00EF1924 /* AppDelegate.m */; };
 		688FBD6B2087395C00EF1924 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 688FBD6A2087395C00EF1924 /* ViewController.m */; };
 		688FBD702087395C00EF1924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 688FBD6F2087395C00EF1924 /* Assets.xcassets */; };
@@ -57,6 +62,12 @@
 		6809EE9620DA372300045E3A /* DJAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJAlertView.m; sourceTree = "<group>"; };
 		687B832D20C93E5C006F11BC /* DJObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJObject.h; sourceTree = "<group>"; };
 		687B832E20C93E5C006F11BC /* DJObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJObject.m; sourceTree = "<group>"; };
+		687C87B420E33A8800E9415C /* XHLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLoadingView.m; sourceTree = "<group>"; };
+		687C87B520E33A8800E9415C /* XHLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLoadingView.h; sourceTree = "<group>"; };
+		687C87B720E33AD200E9415C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		687C87B920E33ADC00E9415C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		687C87BB20E33E2200E9415C /* run.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = run.gif; sourceTree = "<group>"; };
+		687C87BC20E33E2300E9415C /* ride.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ride.gif; sourceTree = "<group>"; };
 		688FBD632087395C00EF1924 /* DJDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DJDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		688FBD662087395C00EF1924 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		688FBD672087395C00EF1924 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,6 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				687C87BA20E33ADC00E9415C /* ImageIO.framework in Frameworks */,
+				687C87B820E33AD200E9415C /* MobileCoreServices.framework in Frameworks */,
 				6809EE8E20DA307600045E3A /* libsqlite3.tbd in Frameworks */,
 				8E04A6790C83EED278776517 /* libPods-DJDemo.a in Frameworks */,
 			);
@@ -117,6 +130,8 @@
 		33CA4591FB3946B3B4DDCAD0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				687C87B920E33ADC00E9415C /* ImageIO.framework */,
+				687C87B720E33AD200E9415C /* MobileCoreServices.framework */,
 				6809EE8D20DA307600045E3A /* libsqlite3.tbd */,
 				540D95C51904798773DBC8AD /* libPods-DJDemo.a */,
 			);
@@ -244,6 +259,8 @@
 		68D6731320A19F0600F24CBA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				687C87BC20E33E2300E9415C /* ride.gif */,
+				687C87BB20E33E2200E9415C /* run.gif */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -251,6 +268,8 @@
 		68D6731420A19F1A00F24CBA /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				687C87B520E33A8800E9415C /* XHLoadingView.h */,
+				687C87B420E33A8800E9415C /* XHLoadingView.m */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -378,7 +397,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				687C87BD20E33E2300E9415C /* run.gif in Resources */,
 				688FBD732087395C00EF1924 /* LaunchScreen.storyboard in Resources */,
+				687C87BE20E33E2300E9415C /* ride.gif in Resources */,
 				68B231F120CE70F400031C9C /* CollectionReusableView.xib in Resources */,
 				688FBD702087395C00EF1924 /* Assets.xcassets in Resources */,
 			);
@@ -437,6 +458,7 @@
 				68BD869020BE771E0079B677 /* UIViewController+Animation.m in Sources */,
 				6809EE9120DA317400045E3A /* Student.m in Sources */,
 				688FBD682087395C00EF1924 /* AppDelegate.m in Sources */,
+				687C87B620E33A8900E9415C /* XHLoadingView.m in Sources */,
 				68D6731E20A2849200F24CBA /* DJBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,8 +536,10 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TSMHUHZH8P;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -569,8 +593,10 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TSMHUHZH8P;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -593,6 +619,7 @@
 			baseConfigurationReference = DACBDEE49C85287B17410F25 /* Pods-DJDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSMHUHZH8P;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DJDemo/PrefixHeader.pch";
@@ -600,6 +627,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.djj.DJDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -609,6 +637,7 @@
 			baseConfigurationReference = B76FE1278D7253EFC0941C78 /* Pods-DJDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSMHUHZH8P;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DJDemo/PrefixHeader.pch";
@@ -616,6 +645,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.djj.DJDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
