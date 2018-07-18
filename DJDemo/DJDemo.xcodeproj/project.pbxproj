@@ -24,12 +24,18 @@
 		688FBD762087395C00EF1924 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 688FBD752087395C00EF1924 /* main.m */; };
 		688FBD802087395C00EF1924 /* DJDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 688FBD7F2087395C00EF1924 /* DJDemoTests.m */; };
 		688FBD8B2087395C00EF1924 /* DJDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 688FBD8A2087395C00EF1924 /* DJDemoUITests.m */; };
-		68B231F020CE70F400031C9C /* CollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B231EE20CE70F400031C9C /* CollectionReusableView.m */; };
-		68B231F120CE70F400031C9C /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B231EF20CE70F400031C9C /* CollectionReusableView.xib */; };
 		68BD868F20BE771E0079B677 /* NSNull+NULLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BD868B20BE771E0079B677 /* NSNull+NULLExtension.m */; };
 		68BD869020BE771E0079B677 /* UIViewController+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BD868D20BE771E0079B677 /* UIViewController+Animation.m */; };
 		68D6731B20A2847A00F24CBA /* DJBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D6731A20A2847A00F24CBA /* DJBaseNavigationController.m */; };
 		68D6731E20A2849200F24CBA /* DJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D6731D20A2849200F24CBA /* DJBaseViewController.m */; };
+		68ECAA3420F736E100482E0A /* DJCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ECAA3320F736E100482E0A /* DJCollectionViewFlowLayout.m */; };
+		68ECAA3720F7389000482E0A /* DJCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ECAA3620F7389000482E0A /* DJCollectionReusableView.m */; };
+		68ECAA3A20F738AB00482E0A /* DJCollectionViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ECAA3920F738AB00482E0A /* DJCollectionViewLayoutAttributes.m */; };
+		68ECAA3E20F7424800482E0A /* CollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ECAA3C20F7424700482E0A /* CollectionReusableView.m */; };
+		68ECAA3F20F7424800482E0A /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68ECAA3D20F7424800482E0A /* CollectionReusableView.xib */; };
+		68ECAA4620F74FE800482E0A /* JHCollectionViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ECAA4320F74FE800482E0A /* JHCollectionViewLayoutAttributes.m */; };
+		68ECAA4720F74FE800482E0A /* JHCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ECAA4420F74FE800482E0A /* JHCollectionReusableView.m */; };
+		68ECAA4820F74FE800482E0A /* JHCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ECAA4520F74FE800482E0A /* JHCollectionViewFlowLayout.m */; };
 		8E04A6790C83EED278776517 /* libPods-DJDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 540D95C51904798773DBC8AD /* libPods-DJDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -83,9 +89,6 @@
 		688FBD862087395C00EF1924 /* DJDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DJDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		688FBD8A2087395C00EF1924 /* DJDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJDemoUITests.m; sourceTree = "<group>"; };
 		688FBD8C2087395C00EF1924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68B231ED20CE70F400031C9C /* CollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionReusableView.h; sourceTree = "<group>"; };
-		68B231EE20CE70F400031C9C /* CollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionReusableView.m; sourceTree = "<group>"; };
-		68B231EF20CE70F400031C9C /* CollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
 		68BD868B20BE771E0079B677 /* NSNull+NULLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+NULLExtension.m"; sourceTree = "<group>"; };
 		68BD868C20BE771E0079B677 /* UIViewController+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Animation.h"; sourceTree = "<group>"; };
 		68BD868D20BE771E0079B677 /* UIViewController+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Animation.m"; sourceTree = "<group>"; };
@@ -94,6 +97,21 @@
 		68D6731A20A2847A00F24CBA /* DJBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJBaseNavigationController.m; sourceTree = "<group>"; };
 		68D6731C20A2849200F24CBA /* DJBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJBaseViewController.h; sourceTree = "<group>"; };
 		68D6731D20A2849200F24CBA /* DJBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJBaseViewController.m; sourceTree = "<group>"; };
+		68ECAA3220F736E100482E0A /* DJCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		68ECAA3320F736E100482E0A /* DJCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		68ECAA3520F7389000482E0A /* DJCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJCollectionReusableView.h; sourceTree = "<group>"; };
+		68ECAA3620F7389000482E0A /* DJCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJCollectionReusableView.m; sourceTree = "<group>"; };
+		68ECAA3820F738AB00482E0A /* DJCollectionViewLayoutAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJCollectionViewLayoutAttributes.h; sourceTree = "<group>"; };
+		68ECAA3920F738AB00482E0A /* DJCollectionViewLayoutAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJCollectionViewLayoutAttributes.m; sourceTree = "<group>"; };
+		68ECAA3B20F7424700482E0A /* CollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionReusableView.h; sourceTree = "<group>"; };
+		68ECAA3C20F7424700482E0A /* CollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionReusableView.m; sourceTree = "<group>"; };
+		68ECAA3D20F7424800482E0A /* CollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
+		68ECAA4020F74FE800482E0A /* JHCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCollectionReusableView.h; sourceTree = "<group>"; };
+		68ECAA4120F74FE800482E0A /* JHCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		68ECAA4220F74FE800482E0A /* JHCollectionViewLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCollectionViewLayoutAttributes.h; sourceTree = "<group>"; };
+		68ECAA4320F74FE800482E0A /* JHCollectionViewLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCollectionViewLayoutAttributes.m; sourceTree = "<group>"; };
+		68ECAA4420F74FE800482E0A /* JHCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCollectionReusableView.m; sourceTree = "<group>"; };
+		68ECAA4520F74FE800482E0A /* JHCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		B76FE1278D7253EFC0941C78 /* Pods-DJDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DJDemo/Pods-DJDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DACBDEE49C85287B17410F25 /* Pods-DJDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DJDemo/Pods-DJDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,9 +203,6 @@
 				688FBD672087395C00EF1924 /* AppDelegate.m */,
 				688FBD692087395C00EF1924 /* ViewController.h */,
 				688FBD6A2087395C00EF1924 /* ViewController.m */,
-				68B231ED20CE70F400031C9C /* CollectionReusableView.h */,
-				68B231EE20CE70F400031C9C /* CollectionReusableView.m */,
-				68B231EF20CE70F400031C9C /* CollectionReusableView.xib */,
 				688FBD6F2087395C00EF1924 /* Assets.xcassets */,
 				688FBD712087395C00EF1924 /* LaunchScreen.storyboard */,
 				688FBD742087395C00EF1924 /* Info.plist */,
@@ -229,6 +244,7 @@
 		68D6731020A19E7300F24CBA /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				68ECAA3120F736CF00482E0A /* CollectionView */,
 				68D6731920A2847A00F24CBA /* DJBaseNavigationController.h */,
 				68D6731A20A2847A00F24CBA /* DJBaseNavigationController.m */,
 				68D6731C20A2849200F24CBA /* DJBaseViewController.h */,
@@ -279,6 +295,28 @@
 			children = (
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		68ECAA3120F736CF00482E0A /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				68ECAA4020F74FE800482E0A /* JHCollectionReusableView.h */,
+				68ECAA4420F74FE800482E0A /* JHCollectionReusableView.m */,
+				68ECAA4120F74FE800482E0A /* JHCollectionViewFlowLayout.h */,
+				68ECAA4520F74FE800482E0A /* JHCollectionViewFlowLayout.m */,
+				68ECAA4220F74FE800482E0A /* JHCollectionViewLayoutAttributes.h */,
+				68ECAA4320F74FE800482E0A /* JHCollectionViewLayoutAttributes.m */,
+				68ECAA3B20F7424700482E0A /* CollectionReusableView.h */,
+				68ECAA3C20F7424700482E0A /* CollectionReusableView.m */,
+				68ECAA3D20F7424800482E0A /* CollectionReusableView.xib */,
+				68ECAA3220F736E100482E0A /* DJCollectionViewFlowLayout.h */,
+				68ECAA3320F736E100482E0A /* DJCollectionViewFlowLayout.m */,
+				68ECAA3520F7389000482E0A /* DJCollectionReusableView.h */,
+				68ECAA3620F7389000482E0A /* DJCollectionReusableView.m */,
+				68ECAA3820F738AB00482E0A /* DJCollectionViewLayoutAttributes.h */,
+				68ECAA3920F738AB00482E0A /* DJCollectionViewLayoutAttributes.m */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		E56E4C16A00C70BA5B8B9A03 /* Pods */ = {
@@ -397,10 +435,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68ECAA3F20F7424800482E0A /* CollectionReusableView.xib in Resources */,
 				687C87BD20E33E2300E9415C /* run.gif in Resources */,
 				688FBD732087395C00EF1924 /* LaunchScreen.storyboard in Resources */,
 				687C87BE20E33E2300E9415C /* ride.gif in Resources */,
-				68B231F120CE70F400031C9C /* CollectionReusableView.xib in Resources */,
 				688FBD702087395C00EF1924 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,7 +487,9 @@
 			files = (
 				68D6731B20A2847A00F24CBA /* DJBaseNavigationController.m in Sources */,
 				688FBD6B2087395C00EF1924 /* ViewController.m in Sources */,
-				68B231F020CE70F400031C9C /* CollectionReusableView.m in Sources */,
+				68ECAA3420F736E100482E0A /* DJCollectionViewFlowLayout.m in Sources */,
+				68ECAA3A20F738AB00482E0A /* DJCollectionViewLayoutAttributes.m in Sources */,
+				68ECAA4620F74FE800482E0A /* JHCollectionViewLayoutAttributes.m in Sources */,
 				687B832F20C93E5C006F11BC /* DJObject.m in Sources */,
 				68BD868F20BE771E0079B677 /* NSNull+NULLExtension.m in Sources */,
 				6809EE9820DA372300045E3A /* DJAlertView.m in Sources */,
@@ -458,6 +498,10 @@
 				68BD869020BE771E0079B677 /* UIViewController+Animation.m in Sources */,
 				6809EE9120DA317400045E3A /* Student.m in Sources */,
 				688FBD682087395C00EF1924 /* AppDelegate.m in Sources */,
+				68ECAA4720F74FE800482E0A /* JHCollectionReusableView.m in Sources */,
+				68ECAA3720F7389000482E0A /* DJCollectionReusableView.m in Sources */,
+				68ECAA4820F74FE800482E0A /* JHCollectionViewFlowLayout.m in Sources */,
+				68ECAA3E20F7424800482E0A /* CollectionReusableView.m in Sources */,
 				687C87B620E33A8900E9415C /* XHLoadingView.m in Sources */,
 				68D6731E20A2849200F24CBA /* DJBaseViewController.m in Sources */,
 			);

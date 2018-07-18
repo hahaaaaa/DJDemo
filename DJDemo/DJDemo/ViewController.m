@@ -8,11 +8,12 @@
 
 #import "ViewController.h"
 #import "CollectionReusableView.h"
+#import "DJCollectionViewFlowLayout.h"
+#import "JHCollectionViewFlowLayout.h"
 #import <Masonry.h>
 #import "DJObject.h"
 
-
-@interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource, JHCollectionViewDelegateFlowLayout>
 
 {
     FMDatabase *_db;
@@ -21,7 +22,6 @@
 }
 @property (strong, nonatomic) UICollectionView *collectionView;
 @property (strong, nonatomic) NSArray *dataSource;
-
 @end
 
 @implementation ViewController
@@ -38,10 +38,9 @@
     
     [self initDataBase];
     
-
 }
 - (void)initData {
-    self.dataSource = @[@"创建表",@"添加数据",@"删除数据",@"修改数据",@"查询数据",@"删表"];
+    self.dataSource = @[@"创建表",@"添加数据",@"删除数据",@"修改数据",@"查询数据",@"删表",@"创建表",@"添加数据",@"删除数据",@"修改数据",@"查询数据",@"删表"];
 }
 - (void)initDataBase {
     //数据库相关
@@ -62,15 +61,15 @@
 #pragma mark - ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ UICollectionView
 - (void)loadCollectionView {
     
-    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    JHCollectionViewFlowLayout *layout = [[JHCollectionViewFlowLayout alloc] init];
     CGFloat cell_margin = 15;
     CGFloat cell_space = 15;
     layout.minimumLineSpacing = cell_margin;
     layout.minimumInteritemSpacing = cell_space;
-    layout.estimatedItemSize = CGSizeMake(30, 20);
+    layout.estimatedItemSize = CGSizeMake(60, 60);
     layout.headerReferenceSize = CGSizeMake(375, 120);
-
-    layout.sectionInset = UIEdgeInsetsMake(cell_margin, cell_margin, cell_margin, cell_margin);
+    layout.sectionInset =  UIEdgeInsetsMake(cell_margin, cell_margin, cell_margin, cell_margin);
+    
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
     
     _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
@@ -78,6 +77,7 @@
     
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
+    
     [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([UICollectionViewCell class])];
     [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([CollectionReusableView class]) bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([CollectionReusableView class])];
     _collectionView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
@@ -87,7 +87,7 @@
     [self.view addSubview:_collectionView];
 }
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
+    return 2;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.dataSource.count;
@@ -104,6 +104,10 @@
         make.edges.equalTo(cell.contentView).insets(UIEdgeInsetsMake(5, 5, 5, 5));
     }];
     return cell;
+}
+- (UIColor *)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout backgroundColorForSection:(NSInteger)section
+{
+    return [UIColor brownColor];
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
